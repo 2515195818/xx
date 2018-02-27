@@ -1,0 +1,63 @@
+﻿1.创建菜单:
+https://mp.weixin.qq.com/debug/cgi-bin/apiinfo?t=index&type=%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95&form=%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95%E5%88%9B%E5%BB%BA%E6%8E%A5%E5%8F%A3%20/menu/create
+
+先点基础支持：
+填写appid和appsecret,从测试公众号:https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login
+上获取
+appid和appsecret填写到appid和secret中，点检查问题，
+=>生成access_token
+拷贝:下面的access_token
+
+用view可以跳转
+click不能跳转
+
+自定义菜单:
+body:
+{
+    "button": [
+        {
+            "type": "view", 
+            "name": "口袋伙伴", 
+            "key": "口袋伙伴",
+	    "url": "http://m19519m344.imwork.net/client.html"
+        }, 
+        {
+            "name": "菜单", 
+            "sub_button": [
+                {
+                    "type": "view", 
+                    "name": "搜索", 
+                    "url": "http://www.soso.com/"
+                }, 
+                {
+                    "type": "view", 
+                    "name": "视频", 
+                    "url": "http://v.qq.com/"
+                }, 
+                {
+                    "type": "click", 
+                    "name": "赞一下我们", 
+                    "key": "V1001_GOOD",
+		    "url": "http://m19519m344.imwork.net/"
+                }
+            ]
+        }
+    ]
+}
+
+
+删除菜单:
+access_token:
+5_HgabH_z0RqnsHG-lwDGc2-up6BYSR3G1RuQ0QpfAJYce3Xtz2DuLuDp-O9u7aSINfE7nSVwHSdX_kQ0kaHAzhH-S0xjtyoQaDH6m_W6fbnCDEH8n0wEYvzEtv8Vb574z1fRGcjEB74zsfzFJTTShAGALLK
+
+
+https://api.weixin.qq.com/cgi-bin/menu/delete?access_token=5_Lk4Lfxa3r9MwjzltkW4hMVyHWnt1B9NDiWepnxk6CY7zq3BdjxcNZWffKog_Nb-xSLO4UCOLJpcSenwlPehsJMVB-MDxjoRBEktVoalr_lX4uxeeLLIONkkqL4w5DiMugLnd62qR8UF4Ob9nAIEaADAHPL
+
+取消关注后重新关注
+
+我的
+https://api.weixin.qq.com/cgi-bin/menu/delete?access_token=5_HgabH_z0RqnsHG-lwDGc2-up6BYSR3G1RuQ0QpfAJYce3Xtz2DuLuDp-O9u7aSINfE7nSVwHSdX_kQ0kaHAzhH-S0xjtyoQaDH6m_W6fbnCDEH8n0wEYvzEtv8Vb574z1fRGcjEB74zsfzFJTTShAGALLK
+
+
+
+

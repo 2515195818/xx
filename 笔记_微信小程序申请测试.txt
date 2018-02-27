@@ -1,0 +1,10 @@
+https://mp.weixin.qq.com/cgi-bin/registermidpage?action=index&lang=zh_CN
+申请注册地址:
+
+登录进入后点设置=>创建项目=>获得appid
+
+https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/devtools.html
+小程序开发工具下载
+
+安装
+填写appid=>进入
